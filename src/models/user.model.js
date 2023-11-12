@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({ //creamos el esquema de la base de dato
         required: true,
     }
 },{
-    timestamps: true
+    timestamps: true //crea un campo de fecha de creacion y modificacion
 })
 
 export default mongoose.model('User', userSchema); //exportamos el modelo de usuario para usarlo en otros archivos
